@@ -5,9 +5,158 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav {
+  background-color: #F55A5A;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
+
+nav i {
+  margin-right: 8px;
+  font-size: 25px;
+}
+
+.travel--card {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  max-height: 500px;
+  position: relative;
+  flex-wrap: wrap;
+  position: relative;
+  max-height: 700px;
+}
+
+.travel--card img {
+  max-width: 450px;
+  height: 350px;
+  border-radius: 6px;
+  background-position: center center;
+  background-size: cover;
+  margin-right: 25px;
+}
+
+.travel--card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 450px;
+  line-height: 2;
+  margin-left: 0;
+}
+
+.travel--card .map--area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info .map--area i {
+  font-size: 25px;
+  color: #F55A5A;
+  margin-right: 10px;
+}
+
+.info .map--area a {
+  color: gray;
+}
+
+.info .map--area span {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+@media all and (max-width:700px) {
+  body {
+    position: relative;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .travel--card {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    max-height: 800px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 50px;
+  }
+
+  .travel--card img{
+    width: 500px;
+    align-self: center;
+    margin-right: 0;
+  }
+
+  .travel--card .info {
+    width: 500px;
+    margin: 0px;
+  }
+
+  .travel--card .info p {
+    max-width: 90%;
+  }
+}
+
+@media all and (max-width:500px) {
+  body {
+    position: relative;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .travel--card {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    max-height: 800px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 50px;
+  }
+
+  .travel--card img{
+    width: 100%;
+    align-self: center;
+    margin-right: 0px;
+  }
+
+  .travel--card .info {
+    width: 100%;
+    margin: 0;
+  }
+
+  .travel--card .info p {
+    max-width: 90%;
+  }
 }
